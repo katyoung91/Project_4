@@ -19,7 +19,54 @@ While the dataset initially comprised numerous columns, we thought it was best t
 - Class (Spectral Class or Type)
 
 # Model Training Results:
+    First Model Features:
+- Sequential model
+- 36 inputs
+- 2 layers with Relu activation
+- Last layer with sigmoid activation
+- Compiled with loss- binary cross entropy and optimized with adam
+- Epochs: 10
+- Loss: 0.01; Accuracy 99.86%
 
+      Second Model Features:
+- Changes: “sigma” columns removed from dataset, fewer nodes per layer
+- Sequential model
+- 24 inputs
+- 2 layers with Relu activation
+- Last layer with sigmoid activation
+- Compiled with loss- binary cross entropy and optimized with adam
+- Epochs: 10
+- Loss: 0.01; Accuracy 99.86%
+
+      Third Model Features:
+- Changes: All but 6 key feature columns removed from dataset, fewer nodes per layer
+- Sequential model
+- 6 inputs
+- 2 layers with Relu activation
+- Last layer with sigmoid activation
+- Compiled with loss- binary cross entropy and optimized with adam
+- Epochs: 10
+- Loss: 0.002; Accuracy 99.89%
+ 
+      Fourth Model Features:
+- Changes: All but 3 key feature columns removed from dataset, fewer nodes per layer, 1 layer dropped
+- Sequential model
+- 3 inputs
+- 1 layer with Relu activation
+- Last layer with sigmoid activation
+- Compiled with loss- binary crossentropy and optimized with adam
+- Epochs: 10
+- Loss: 0.003; Accuracy 99.82%
+
+      Fifth Model Features:
+- Changes: Reverted data back to third model attempt columns, layers and nodes. Data was processed using these 6 columns resulting in more data to train with.
+- Sequential model
+- 6 inputs
+- 2 layer with Relu activation
+- Last layer with sigmoid activation
+- Compiled with loss- binary crossentropy and optimized with adam
+- Epochs: 10
+- Loss: 0.001; Accuracy 99.92%
 
 # Group Members:
 Amie Shank, Katherine Young, Siobhan Byrne, Amber Amparo
